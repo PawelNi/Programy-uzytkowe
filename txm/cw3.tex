@@ -1,0 +1,103 @@
+\documentclass[a4paper]{article}
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{caption}
+\usepackage{multirow}
+\title{Ćwiczenie 3}
+\author{Paweł Nieczepa}
+\date{Listopad 2022}
+\begin{document}
+\maketitle
+
+
+
+
+
+
+\begin{table}[h]
+\centering\caption{Przykładowy system decyzyjny (U,A,d), modelujący problem diagnozy medycznej, której efektem jest decyzja o wykonaniu lub nie wykonaniu operacji wycięcia wyrostka robaczkowego  , \\U = \{$u_{1}$,$u_{2}$,...,$u_{10}$\}, A = \{$a_{1}$,$a_{2}$\},d $\in$ D  = \{TAK,NIE\} }
+\begin{tabular}{c|c c c} \hline \hline
+Pacjent & Ból brzucha & Temperatura ciała & Operacja\\ \hline 
+$u_{1}$ & Mocny & Wysoka &  Tak\\
+$u_{2}$ & Średni & Wysoka &  Tak\\
+$u_{3}$ & Mocny & Średnia &  Tak\\
+$u_{4}$ & Mocny & Niska &  Tak\\
+$u_{5}$ & Średni & Średnia &  Tak\\
+$u_{6}$ & Średni & Średnia &  Nie\\
+$u_{7}$ & Mały & Wysoka &  Nie\\
+$u_{8}$ & Mały & Niska  &  Nie\\
+$u_{9}$ & Mocny & Niska &  Nie\\
+$u_{10}$ & Mały & Średnia &  Nie\\ 
+\hline 
+\hline
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{AND}
+\begin{tabular}{c c|c}
+a & b & y \\ \hline
+0 & 0 & 0\\
+0 & 1 & 0\\
+1 & 0 & 0\\
+1 & 1 & 1\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{OR}
+\begin{tabular}{c c|c}
+a & b & y \\ \hline
+0 & 0 & 0\\
+0 & 1 & 1\\
+1 & 0 & 1\\
+1 & 1 & 1\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{NAND}
+\begin{tabular}{c c|c}
+a & b & y \\ \hline
+0 & 0 & 1\\
+0 & 1 & 1\\
+1 & 0 & 1\\
+1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{NOR}
+\begin{tabular}{c c|c}
+a & b & y \\ \hline
+0 & 0 & 1\\
+0 & 1 & 0\\
+1 & 0 & 0\\
+1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{NOT}
+\begin{tabular}{c|c}
+a & y \\ \hline
+0 & 1\\
+1 & 0\\
+
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\caption{XOR}
+\begin{tabular}{c c|c}
+a & b & y \\ \hline
+0 & 0 & 0\\
+0 & 1 & 1\\
+1 & 0 & 1\\
+1 & 1 & 0\\
+\end{tabular}
+\end{table}
+
+\end{document}
+
